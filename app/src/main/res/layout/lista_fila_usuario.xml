@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <Button
+            android:id="@+id/btnDetalle"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/txtViewApellido"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="-7dp"
+            android:text="Detalle"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"/>
+
+    <TextView
+            android:id="@+id/txtViewNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre:"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/btnDetalle" android:layout_alignStart="@+id/txtViewApellido"/>
+
+    <TextView
+            android:id="@+id/txtViewApellido"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:text="Apellido:"
+            android:textStyle="bold"
+            android:layout_marginTop="42dp" android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/txtViewCedula"/>
+
+    <TextView
+            android:id="@+id/txtViewCedula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CI:" android:layout_alignParentTop="true" android:layout_alignParentStart="true"
+            android:layout_marginStart="54dp" android:layout_toStartOf="@+id/btnDetalle"/>
+
+    <Button
+            android:id="@+id/btnLike"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:background="@color/like"
+            android:text="LIKE"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" android:layout_below="@+id/txtViewNombre"
+            android:layout_toStartOf="@+id/btnDetalle"/>
+
+
+</RelativeLayout>

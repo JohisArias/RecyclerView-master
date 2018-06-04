@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail">
+
+    <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="88dp"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+            android:id="@+id/txtApellido"
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="72dp"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/txtNombre"
+            app:layout_constraintHorizontal_bias="0.916"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNombre"/>
+
+    <TextView
+            android:id="@+id/txtCedula"
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="68dp"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/txtApellido"
+            app:layout_constraintHorizontal_bias="0.069"
+            app:layout_constraintStart_toStartOf="@+id/txtApellido"
+            app:layout_constraintTop_toBottomOf="@+id/txtApellido"/>
+
+    <TextView
+            android:id="@+id/txtEstado"
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="76dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txtCedula"
+            app:layout_constraintHorizontal_bias="0.075"
+            app:layout_constraintStart_toStartOf="@+id/txtCedula"
+            app:layout_constraintTop_toBottomOf="@+id/txtCedula"
+            app:layout_constraintVertical_bias="0.055"/>
+
+    <TextView
+            android:id="@+id/tViewNombre"
+            android:layout_width="104dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Nombre"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/tViewApellido"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.193"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.298"/>
+
+    <TextView
+            android:id="@+id/tViewApellido"
+            android:layout_width="119dp"
+            android:layout_height="37dp"
+            android:layout_marginBottom="68dp"
+            android:layout_marginEnd="16dp"
+            android:text="Apellido"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/tViewCedula"
+            app:layout_constraintEnd_toEndOf="@+id/tViewNombre"
+            app:layout_constraintHorizontal_bias="0.17"
+            app:layout_constraintStart_toStartOf="@+id/tViewNombre" android:layout_marginStart="16dp"/>
+
+    <TextView
+            android:id="@+id/tViewCedula"
+            android:layout_width="109dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:text="Cédula"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tViewApellido"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/tViewApellido"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498"/>
+
+    <TextView
+            android:id="@+id/tViewEstado"
+            android:layout_width="107dp"
+            android:layout_height="39dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="72dp"
+            android:text="Estado"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/tViewCedula"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="@+id/tViewCedula"
+            app:layout_constraintTop_toBottomOf="@+id/tViewCedula" android:layout_marginStart="16dp"/>
+</android.support.constraint.ConstraintLayout>

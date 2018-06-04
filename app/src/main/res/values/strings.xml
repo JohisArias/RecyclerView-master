@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Recycler</string>
+    <string name="title_activity_actividad_layouts">actividad_layouts</string>
+    <string name="title_activity_detail">Detalles</string>
+</resources>
